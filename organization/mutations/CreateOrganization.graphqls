@@ -1,0 +1,7 @@
+input CreateOrganizationRequest {
+    name: String!
+}
+
+extend type Mutation {
+    CreateOrganization(input: CreateOrganizationRequest!): Organization!
+}

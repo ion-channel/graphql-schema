@@ -1,0 +1,55 @@
+interface SearchResult {
+    id: String!
+    confidence: Float!
+    is_user_input: Boolean!
+    selected: Boolean!
+    automatically_selected: Boolean!
+    name: String!
+    org: String!
+    version: String!
+}
+
+type PackageSearchResult implements SearchResult {
+    id: String!
+    confidence: Float!
+    is_user_input: Boolean!
+    selected: Boolean!
+    automatically_selected: Boolean!
+    name: String!
+    org: String!
+    version: String!
+
+    purl: String!
+}
+
+type RepoSearchResult implements SearchResult {
+    id: String!
+    confidence: Float!
+    is_user_input: Boolean!
+    selected: Boolean!
+    automatically_selected: Boolean!
+    name: String!
+    org: String!
+    version: String!
+
+    repo_url: String!
+}
+
+type ProductSearchResult implements SearchResult {
+    id: String!
+    confidence: Float!
+    is_user_input: Boolean!
+    selected: Boolean!
+    automatically_selected: Boolean!
+    name: String!
+    org: String!
+    version: String!
+
+    cpe: String!
+}
+
+type SearchResults {
+    package: [PackageSearchResult!]!
+    repo: [RepoSearchResult!]!
+    product: [ProductSearchResult!]!
+}

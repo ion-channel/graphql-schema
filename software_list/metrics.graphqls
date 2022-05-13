@@ -1,0 +1,26 @@
+type RiskScope {
+    key: String!
+    value: Int
+}
+
+type Risk {
+    score: Int
+    scopes: [RiskScope!]!
+}
+
+type Compliance {
+    passing: Int!
+    failing: Int!
+}
+
+type Resolution {
+    resolved: Int!
+    partiallyResolved: Int!
+    unresolved: Int!
+}
+
+type Metrics {
+    risk: Risk!
+    compliance: Compliance!
+    resolution: Resolution!
+}

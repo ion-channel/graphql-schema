@@ -1,0 +1,19 @@
+enum OrganizationRole {
+    Owner
+    Manager
+    Member
+}
+
+type OrganizationMember {
+    user_id: String!
+    role: OrganizationRole!
+}
+
+type Organization {
+    id: String!
+    created_at: Time!
+    updated_at: Time!
+    deleted_at: Time
+    name: String!
+    members: [OrganizationMember!]!
+}

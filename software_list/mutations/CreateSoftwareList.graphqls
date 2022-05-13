@@ -1,0 +1,7 @@
+input CreateSoftwareListRequest {
+    name: String!
+}
+
+extend type Mutation {
+    CreateSoftwareList(input: CreateSoftwareListRequest!): SoftwareList!
+}

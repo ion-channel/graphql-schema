@@ -1,0 +1,30 @@
+enum UserStatus {
+    active
+    disabled
+}
+
+type UserOrganizationRole {
+    role: OrganizationRole!
+    organization: Organization!
+}
+
+type UserTeamRole {
+    role: String!
+    team_id: String!
+}
+
+type User {
+    id:                String!        
+    email:             String!            
+    username:          String!            
+    created_at:         Time!
+    updated_at:         Time!
+    last_active_at:        Time!
+    status:            UserStatus!
+    externally_managed: Boolean!
+    metadata:          String
+    sys_admin:          Boolean!
+    system:            Boolean!
+    organizations:     [UserOrganizationRole!]!
+    teams:             [UserTeamRole!]!
+}
