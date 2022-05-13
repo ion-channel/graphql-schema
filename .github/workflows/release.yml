@@ -1,0 +1,29 @@
+name: Release
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    name: Generate release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install graphql-schema-utilities
+        run: npm install -g graphql-schema-utilities
+
+      - name: Generate consolidated GraphQL schema
+        run: graphql-schema-utilities -s "**/*.graphqls" -o consolidated_schema.graphqls
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: consolidated_schema.graphqls
