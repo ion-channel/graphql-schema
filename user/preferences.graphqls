@@ -1,0 +1,13 @@
+enum NotificationChannelOption {
+    email
+}
+
+enum NotificationFrequencyOption {
+    daily
+}
+
+type Preferences {
+    flip: Boolean!
+    notification_channel: NotificationChannelOption!
+    frequency: NotificationFrequencyOption!
+}
