@@ -1,3 +1,3 @@
 extend type Query {
-    software_lists(ids: [String!], names: [String!]): [SoftwareList!]!
+    software_lists(ids: [String!], org_id: String): [SoftwareList!]!
 }

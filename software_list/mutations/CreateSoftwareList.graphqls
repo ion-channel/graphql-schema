@@ -1,5 +1,12 @@
 input CreateSoftwareListRequest {
     name: String!
+    org_id: String!
+    version: String
+    supplier_name: String
+    contact_name: String
+    contact_email: String
+    ruleset_id: String
+    monitor_frequency: String
 }
 
 extend type Mutation {

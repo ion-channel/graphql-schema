@@ -5,21 +5,21 @@ enum SoftwareListStatus {
 }
 
 type SoftwareList {
-    id:               String!
-    name:             String!
-    version:          String!
-    supplier:         String!
-    contact_name:      String!
-    contact_email:     String!
+    id: String!
+    name: String!
+    version: String!
+    supplier: String!
+    contact_name: String!
+    contact_email: String!
     monitor_frequency: String!
-    status:           SoftwareListStatus!
-    created_at:        Time!
-    updated_at:        Time!
-    deleted_at:        Time
-    entry_count:       Int
-    metrics:          Metrics!
-    entries:          [Component!]!
-    team_id:           String!
-    org_id:          String!
-    ruleset_id:        String!
+    status: SoftwareListStatus!
+    created_at: Time!
+    updated_at: Time!
+    deleted_at: Time
+    entry_count: Int
+    metrics: Metrics!
+    entries: [Component!]!
+    team_id: String!
+    org_id: String!
+    ruleset_id: String!
 }

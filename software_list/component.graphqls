@@ -12,16 +12,16 @@ type ComponentSuggestion {
 }
 
 type Component {
-    id:               String!
+    id: String!
     sbom_id: String!
-    name:             String!
-    version:          String!
-    org:            String!
-    status:           ComponentStatus!
-    search_results:  SearchResults!
-    suggestions:    [ComponentSuggestion!]!
-    created_at:        Time!
-    updated_at:        Time!
-    deleted_at:        Time
-    error_message:   String
+    name: String!
+    version: String!
+    org: String!
+    status: ComponentStatus!
+    search_results: SearchResults!
+    suggestions: [ComponentSuggestion!]!
+    created_at: Time!
+    updated_at: Time!
+    deleted_at: Time
+    error_message: String
 }
