@@ -1,3 +1,10 @@
+enum SearchResultType {
+    package
+    product
+    repo
+}
+
+
 interface SearchResult {
     id: String!
     confidence: Float!
