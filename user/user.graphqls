@@ -14,17 +14,17 @@ type UserTeamRole {
 }
 
 type User {
-    id:                String!        
-    email:             String!            
-    username:          String!            
-    created_at:         Time!
-    updated_at:         Time!
-    last_active_at:        Time!
-    status:            UserStatus!
+    id: String!
+    email: String!
+    username: String!
+    created_at: Time!
+    updated_at: Time!
+    last_active_at: Time!
+    status: UserStatus!
     externally_managed: Boolean!
-    metadata:          String
-    sys_admin:          Boolean!
-    system:            Boolean!
-    organizations:     [UserOrganizationRole!]!
-    teams:             [UserTeamRole!]!
+    metadata: String
+    sys_admin: Boolean!
+    system: Boolean!
+    organizations: [UserOrganizationRole!]!
+    teams: [UserTeamRole!]!
 }
