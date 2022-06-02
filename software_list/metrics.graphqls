@@ -15,7 +15,7 @@ type Compliance {
 
 type Resolution {
   resolved: Int!
-  partiallyResolved: Int!
+  partially_resolved: Int!
   unresolved: Int!
 }
 
