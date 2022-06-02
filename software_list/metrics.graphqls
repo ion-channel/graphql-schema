@@ -1,5 +1,5 @@
 type RiskScope {
-  key: String!
+  name: String!
   value: Int
 }
 
