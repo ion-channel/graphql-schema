@@ -8,6 +8,8 @@ type OrganizationMember {
     user_id: String!
     username: String!
     role: OrganizationRole!
+    created_at: Time!
+    deleted_at: Time
 }
 
 type Organization {
