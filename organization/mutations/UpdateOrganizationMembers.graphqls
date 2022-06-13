@@ -10,5 +10,5 @@ input UpdateOrganizationMembersInput {
 }
 
 extend type Mutation {
-    UpdateOrganizationMembers(input: [UpdateOrganizationMembersInput!]!): Boolean
+    UpdateOrganizationMembers(input: UpdateOrganizationMembersInput!): Boolean
 }
