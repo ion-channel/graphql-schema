@@ -1,10 +1,14 @@
-input UpdateOrganizationMemberInput {
+input OrganizationMemberUpdate {
     user_id: String!
     role: OrganizationRole
     deleted_at: Time
 }
 
-extend type Mutation {
-    UpdateOrganizationMembers(input: [UpdateOrganizationMemberInput!]!): Boolean
+input UpdateOrganizationMembersInput {
+    org_id: String!
+    members: [OrganizationMemberUpdate!]!
 }
 
+extend type Mutation {
+    UpdateOrganizationMembers(input: [UpdateOrganizationMembersInput!]!): Boolean
+}
