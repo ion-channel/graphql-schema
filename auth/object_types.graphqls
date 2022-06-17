@@ -1,0 +1,4 @@
+enum ObjectTypes {
+    organization
+    software_list
+}
