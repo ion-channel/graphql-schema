@@ -1,4 +1,0 @@
-enum ObjectType {
-    organization
-    software_list
-}
