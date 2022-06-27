@@ -7,6 +7,7 @@ enum OrganizationRole {
 type OrganizationMember {
     user_id: String!
     username: String!
+    role_id: String!
     role: OrganizationRole!
     created_at: Time!
     deleted_at: Time

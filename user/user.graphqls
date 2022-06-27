@@ -4,6 +4,7 @@ enum UserStatus {
 }
 
 type UserOrganizationRole {
+    role_id: String!
     role: OrganizationRole!
     organization: Organization!
 }
