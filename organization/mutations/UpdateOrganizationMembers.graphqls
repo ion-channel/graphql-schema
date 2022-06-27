@@ -1,6 +1,6 @@
 input OrganizationMemberUpdate {
     user_id: String!
-    role: OrganizationRole
+    role_id: String
     deleted_at: Time
 }
 
