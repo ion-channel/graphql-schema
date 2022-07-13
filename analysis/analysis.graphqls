@@ -1,0 +1,22 @@
+type Analysis {
+  id: String!
+  team_id: String!
+  project_id: String!
+  name: String!
+  text: String!
+  type: String!
+  source: String!
+  branch: String!
+  description: String!
+  summary: String!
+  ruleset_id: String!
+  status: String!
+  created_at: String!
+  updated_at: String!
+  duration: Float!
+  trigger_hash: String!
+  trigger_text: String!
+  trigger_author: String!
+  trigger: String!
+  scan_summaries: [Scan!]!
+}
