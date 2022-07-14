@@ -1,4 +1,4 @@
-type Scopes {
+type Scope {
   name: String
   value: Float
 }
@@ -6,5 +6,5 @@ type Scopes {
 type Scores {
   name: String
   value: Float
-  scopes: [Scopes]
+  scopes: [Scope]
 }
