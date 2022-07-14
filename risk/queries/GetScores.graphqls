@@ -1,0 +1,3 @@
+extend type Query {
+    scores(id: String!): Scores!
+}

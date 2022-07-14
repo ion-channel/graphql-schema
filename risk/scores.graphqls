@@ -1,0 +1,10 @@
+type Scopes {
+  name: String
+  value: Float
+}
+
+type Scores {
+  name: String
+  value: Float
+  scopes: [Scopes]
+}
