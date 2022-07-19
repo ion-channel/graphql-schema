@@ -19,7 +19,7 @@ type Resolution {
   unresolved: Int!
 }
 
-type Metrics {
+type ListMetrics {
   risk: Risk!
   compliance: Compliance!
   resolution: Resolution!
