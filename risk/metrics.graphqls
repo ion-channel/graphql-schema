@@ -35,7 +35,7 @@ type MonthlyMttr {
 
 type MonthlyMttrMetrics {
   name: String
-  value: [Value]
+  value: [MonthlyMttr]
   bindings: [MonthlyMttr]
 }
 
