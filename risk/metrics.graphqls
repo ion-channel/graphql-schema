@@ -28,11 +28,6 @@ type SourceMonthlyCountMetrics {
   bindings: [String]
 }
 
-type Value {
-  month: String
-  mttr: Int
-}
-
 type MonthlyMttr {
   mttr: Float
   month: String
@@ -63,7 +58,7 @@ type DateMetrics {
 
 type FloatMetrics {
   name: String
-  value: Int
+  value: Float
   bindings: [Bindings]
 }
 
