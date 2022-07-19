@@ -11,20 +11,20 @@ type Count {
 	source: String
 }
 
-type MonthlyCount {
-	count: [SourceCount]
+type MonthlyCounts {
+	count: [Count]
 	month: String
 }
 
 type SourceCountMetric {
   name: String
-  value: [SourceCount]
+  value: [Count]
   bindings: [ScoreBinding]
 }
 
 type SourceMonthlyCountMetric {
   name: String
-  value: [SourceMonthlyCount]
+  value: [MonthlyCounts]
   bindings: [ScoreBinding]
 }
 
