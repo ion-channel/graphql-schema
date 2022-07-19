@@ -1,0 +1,3 @@
+extend type Query {
+    metrics(id: String!): Metrics!
+}
