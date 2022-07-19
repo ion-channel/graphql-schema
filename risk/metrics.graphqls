@@ -11,7 +11,7 @@ type SourceCount {
 	source: String
 }
 
-type SourceMonthlyCount struct {
+type SourceMonthlyCount {
 	count: [SourceCount]
 	month: String
 }
