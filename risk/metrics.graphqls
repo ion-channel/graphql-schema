@@ -6,12 +6,12 @@ type ScoreBinding {
   source: String
 }
 
-type SourceCount {
+type Count {
 	count:  Int
 	source: String
 }
 
-type SourceMonthlyCount {
+type MonthlyCount {
 	count: [SourceCount]
 	month: String
 }
