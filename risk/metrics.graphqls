@@ -1,4 +1,4 @@
-type Binding {
+type ScoreBinding {
   metric: String
   scope: String
   category: String
@@ -19,13 +19,13 @@ type SourceMonthlyCount {
 type SourceCountMetric {
   name: String
   value: [SourceCount]
-  bindings: [Binding]
+  bindings: [ScoreBinding]
 }
 
 type SourceMonthlyCountMetric {
   name: String
   value: [SourceMonthlyCount]
-  bindings: [String]
+  bindings: [ScoreBinding]
 }
 
 type MonthlyMttr {
@@ -36,7 +36,7 @@ type MonthlyMttr {
 type MonthlyMttrMetric {
   name: String
   value: [MonthlyMttr]
-  bindings: [MonthlyMttr]
+  bindings: [ScoreBinding]
 }
 
 type MonthlyCount {
@@ -47,25 +47,25 @@ type MonthlyCount {
 type MonthlyCountMetric {
   name: String
   value: [MonthlyCount]
-  bindings: [String]
+  bindings: [ScoreBinding]
 }
 
 type DateMetric {
   name: String
   value: String
-  bindings: [String]
+  bindings: [ScoreBinding]
 }
 
 type FloatMetric {
   name: String
   value: Float
-  bindings: [Binding]
+  bindings: [ScoreBinding]
 }
 
 type IntMetric {
   name: String
   value: Int
-  bindings: [Binding]
+  bindings: [ScoreBinding]
 }
 
 type Metrics {
