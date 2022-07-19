@@ -1,4 +1,4 @@
-type Bindings {
+type Binding {
   metric: String
   scope: String
   category: String
@@ -19,7 +19,7 @@ type SourceMonthlyCount {
 type SourceCountMetric {
   name: String
   value: [SourceCount]
-  bindings: [Bindings]
+  bindings: [Binding]
 }
 
 type SourceMonthlyCountMetric {
@@ -59,13 +59,13 @@ type DateMetric {
 type FloatMetric {
   name: String
   value: Float
-  bindings: [Bindings]
+  bindings: [Binding]
 }
 
 type IntMetric {
   name: String
   value: Int
-  bindings: [Bindings]
+  bindings: [Binding]
 }
 
 type Metrics {
