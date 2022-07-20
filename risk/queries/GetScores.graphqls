@@ -1,3 +1,7 @@
 extend type Query {
     scores(id: String!): Scores!
 }
+
+extend type Query {
+    scores(purl: String!): Scores!
+}
