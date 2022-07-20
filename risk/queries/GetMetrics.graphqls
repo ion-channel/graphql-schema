@@ -1,7 +1,7 @@
 extend type Query {
-    metrics(id: String!): Metrics!
+    metricsById(id: String!): Metrics!
 }
 
 extend type Query {
-    metrics(purl: String!): Metrics!
+    metricsByPurl(purl: String!): Metrics!
 }
