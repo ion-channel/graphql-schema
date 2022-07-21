@@ -1,7 +1,7 @@
 extend type Query {
-    metadataById(id: String!, internal_name: String!): Metadata!
+    metadataById(id: String!): [MetricMetadata]
 }
 
 extend type Query {
-    metadataByPurl(purl: String!, internal_name: String!): Metadata!
+    metadataByPurl(purl: String!): [MetricMetadata]
 }
