@@ -1,0 +1,21 @@
+type RiskTags {
+  name: String
+  description: String
+}
+
+type Bindings {
+  metric: String
+  scope: String
+  category: String
+  attribute: String
+  source: String
+}
+
+type Metadata {
+  name: String
+  definition: String
+  graph_yn: Boolean
+  related_metrics: [String]
+  risk_tags: [RiskTags]
+  bindings: [Bindings]
+}
