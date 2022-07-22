@@ -14,6 +14,7 @@ type ComponentSuggestion {
 type Component {
     id: String!
     sbom_id: String!
+    project_id: String
     name: String!
     version: String!
     org: String!
